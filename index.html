@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Boxicons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+<i class="bx bx-book-open"></i>
+<h1>Student Management System</h1>
+<p>Manage your academic records efficiently</p>
+</header>
+<div class="addedalert" id="successmsg">Student added Succesfully</div>
+
+<section class="container">
+
+<div class="formhead">
+<i class="bx bx-user-plus"></i>
+<h2>New Student</h2>
+</div>
+
+<form id="studentForm">
+
+<div class="row">
+
+<div class="input-box">
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter student name">
+</div>
+
+<div class="input-box">
+<label for="rollNumber">Roll Number</label>
+<input type="text" id="rollNumber" placeholder="Enter roll number">
+</div>
+
+</div>
+
+<div class="input-box">
+<label for="department">Department</label>
+<input type="text" id="department" placeholder="Enter department">
+</div>
+
+<button type="submit" id="addbtn">
+<i class="bx bx-plus"></i> Add Student
+</button>
+
+</form>
+
+</section>
+
+
+<section class="table-container">
+
+    <div class="tablehead">
+        <div class="table-title">
+            <i class="bx bx-table"></i>
+            <h2>Student Records</h2>
+        </div>
+        <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input type="text" id="searchInput" placeholder="Search by name...">
+        </div>
+    </div>
+
+<table id="studentTable">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Roll Number</th>
+<th>Department</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+<!-- Students will appear here -->
+</tbody>
+
+</table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
